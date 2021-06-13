@@ -59,11 +59,15 @@ public class App
 
     public static void read(List<Map> returnList)
     {
+        System.out.println("Name\n-------------------");
         for(int i = 0; i < 6; i++)
         {
-
             String str = returnList.get(i).values().toString();
             str = str.substring(1,str.length()-1);
+            String str2 = returnList.get(i).keySet().toString();
+            str2 = str2.substring(1,str2.length()-1);
+            str = str2 + " " + str;
+
             System.out.println(str);
         }
     }
