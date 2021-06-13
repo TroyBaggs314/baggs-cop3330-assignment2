@@ -1,0 +1,7 @@
+@startuml
+
+class input
+input -> input
+input -> math
+math -> result
+@enduml
