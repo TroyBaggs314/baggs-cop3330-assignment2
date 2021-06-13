@@ -1,6 +1,6 @@
-package org.ex39Test;
+package org.ex40Test;
 
-import ex39.App;
+import ex40.App;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -41,23 +41,11 @@ public class AppTest
         List<Map> result = new ArrayList<>();
         HashMap<String, String> rflName1 = new HashMap<>();
         HashMap<String, String> rflName2 = new HashMap<>();
-        HashMap<String, String> rflName3 = new HashMap<>();
-        HashMap<String, String> rflName4 = new HashMap<>();
-        HashMap<String, String> rflName5 = new HashMap<>();
-        HashMap<String, String> rflName6 = new HashMap<>();
-        rflName5.put("Jacquelyn","Jackson");
-        rflName4.put("Jake","Jacobson");
-        rflName1.put("John","Johnson");
-        rflName3.put("Michaela","Michaelson");
-        rflName6.put("Sally","Webber");
-        rflName2.put("Tou","Xiong");
-        result.add(rflName5);
-        result.add(rflName4);
+        rflName1.put("Jake","Jacobson");
+        rflName2.put("Jacquelyn","Jackson");
         result.add(rflName1);
-        result.add(rflName3);
-        result.add(rflName6);
         result.add(rflName2);
-        assertEquals(result, App.sort(alDm));
+        assertEquals(result, App.search("Jac"));
     }
 
 }
